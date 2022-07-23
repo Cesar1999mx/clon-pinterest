@@ -1,0 +1,118 @@
+html {
+    font-family: sans-serif; /* 1 */
+    line-height: 1.15; /* 2 */
+    -ms-text-size-adjust: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+  }
+
+.h1{
+  
+  background-color: darkorange;
+color: red;
+text-emphasis: bold;
+color-scheme: red;
+
+}
+
+
+.button{
+  color: rgb(0, 0, 0);
+  color-scheme: bold;
+  background: rgb(255,251,251);
+background:rgb(236, 255, 69);
+text-emphasis: bold;
+}
+
+
+
+    body {
+        background: var(--background-color);
+      }
+      
+      nav {
+        width: 100%;
+        height: auto;
+        background-color: lightgray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2rem;
+        padding: 1rem;
+      }
+      
+      .barra-busqueda {
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .barra-busqueda input {
+        height: 40px;
+        width: 45vw;}
+
+
+        .search {
+            height: 2rem;
+            border-radius: 25px;
+            box-shadow: 0;
+          }
+          
+          .search-button {
+            height: 2rem;
+          }
+          .body, h1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 2rem;
+          }
+          
+          .wrapper-card {
+            padding: 0.4 rem;
+            max-width: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+            justify-content: center;
+            grid-template-rows: masonry;
+            gap: 0.4rem;
+          }
+
+          .card {
+            width: 236px;
+            height: 450px;
+            border-radius: 15px;
+            margin: 2rem;
+            position: relative;
+          }
+          
+          .card img {
+            border-radius: inherit;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+
+
+
+main{
+  animation:cubic-bezier(0.165, 0.84, 0.44, 1);
+      animation:normal;
+      animation-duration: 5s;
+      animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+
