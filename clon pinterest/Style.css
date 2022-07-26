@@ -1,81 +1,76 @@
-html {
-    font-family: sans-serif; /* 1 */
-    line-height: 1.15; /* 2 */
-    -ms-text-size-adjust: 100%; /* 3 */
-    -webkit-text-size-adjust: 100%; /* 3 */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.h1{
-  
-  background-color: darkorange;
-color: red;
-text-emphasis: bold;
-color-scheme: red;
+:root{
+  font-family: 'Montserrat', sans-serif;
+}
+
+*{
+border: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+*:after, *:before {
+box-sizing: inherit;
+}
+
+nav{
+height: 80px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.btn {
+border: none;
+width: 4.44rem;
+height: 3rem;
+padding: 8px;
+border-radius: 40px;
+background-color: white;
+}
+
+.item-img {
+width: 15.79rem;
+height: auto;
+object-fit: cover;
 
 }
 
+.barra-busqueda {
+height: 45px;
+display: flex;
+flex-direction: row;
+position: fixed;
 
-.button{
-  color: rgb(0, 0, 0);
-  color-scheme: bold;
-  background: rgb(255,251,251);
-background:rgb(236, 255, 69);
-text-emphasis: bold;
+}
+      
+.barra-busqueda input {
+height: 40px;
+width: 45vw;
+position: fixed;
+}
+
+.search {
+height: 2rem;
+border-radius: 25px;
+box-shadow: 2rem;
+position: fixed;
+}
+          
+.search-button {
+  height: 2rem;
+position: fixed;
 }
 
 
-
-    body {
-        background: var(--background-color);
-      }
-      
-      nav {
-        width: 100%;
-        height: auto;
-        background-color: lightgray;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 2rem;
-        padding: 1rem;
-      }
-      
-      .barra-busqueda {
-        height: 45px;
-        display: flex;
-        flex-direction: row;
-      }
-      
-      .barra-busqueda input {
-        height: 40px;
-        width: 45vw;}
-
-
-        .search {
-            height: 2rem;
-            border-radius: 25px;
-            box-shadow: 0;
-          }
-          
-          .search-button {
-            height: 2rem;
-          }
-          .body, h1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding-top: 2rem;
-          }
-          
-          .wrapper-card {
-            padding: 0.4 rem;
+          .contenedor-imagen {
+            padding: 0.4rem;
             max-width: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
-            justify-content: center;
-            grid-template-rows: masonry;
+            grid-auto-flow: dense;
             gap: 0.4rem;
+            columns: 4;
           }
 
           .card {
@@ -83,14 +78,14 @@ text-emphasis: bold;
             height: 450px;
             border-radius: 15px;
             margin: 2rem;
-            position: relative;
           }
           
-          .card img {
+          .item-img {
             border-radius: inherit;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            columns: 4;  
           }
 
 
@@ -114,5 +109,3 @@ main{
         width: 100%;
       }
     }
-
-
