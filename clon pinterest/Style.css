@@ -63,49 +63,53 @@ position: fixed;
 position: fixed;
 }
 
+main {
+padding: 0.4rem;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fill, 300px);
+gap: 0.4rem;
+align-self: place;
+justify-items: center;
+}
 
-          .contenedor-imagen {
-            padding: 0.4rem;
-            max-width: auto;
-            display: grid;
-            grid-auto-flow: dense;
-            gap: 0.4rem;
-            columns: 4;
-          }
-
-          .card {
-            width: 236px;
-            height: 450px;
-            border-radius: 15px;
-            margin: 2rem;
-          }
+.card {
+width: 236px;
+height: 450px;
+border-radius: 15px;
+margin: 2rem;
+}
           
-          .item-img {
-            border-radius: inherit;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            columns: 4;  
-          }
-
-
-
+.item-img {
+border-radius: inherit;
+width: 100%;
+height: 100%;  
+}
 
 main{
-  animation:cubic-bezier(0.165, 0.84, 0.44, 1);
-      animation:normal;
-      animation-duration: 5s;
-      animation-name: slidein;
-    }
+animation:cubic-bezier(0.165, 0.84, 0.44, 1);
+animation:normal;
+animation-duration: 5s;
+animation-name: slidein;
+}
     
-    @keyframes slidein {
-      from {
-        margin-left: 100%;
-        width: 300%
-      }
+@keyframes slidein {
+from {
+margin-left: 100%;
+width: 300%
+}
     
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-    }
+to {
+margin-left: 0%;
+width: 100%;
+}
+}
+
+
+.contenedor-1{
+
+  display: flex;
+  justify-content: center;
+
+
+}
